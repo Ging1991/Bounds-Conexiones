@@ -1,0 +1,13 @@
+{
+	"name": "com.bounds.conexiones",
+	"version": "1.0.0",
+	"displayName": "Bounds - Conexiones",
+	"description": "Módulo de mazos para Bounds TCG",
+	"unity": "2021.3",
+	"keywords": ["cartas", "estrategia", "imagenes", "utiles"],
+	"author": {
+		"name": "Carlos Caballero",
+		"email": "tu-email@ejemplo.com",
+		"url": "https://github.com/Ging1991/Bounds-Modulos-Cartas.git"
+	}
+}
