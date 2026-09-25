@@ -1,18 +1,15 @@
 using System;
 using System.Collections.Generic;
 
-namespace Bounds.Conexiones {
+namespace Bounds.Conexiones.Servicios {
 
-	public class ConexionRestricciones : ConexionBase<ConexionRestricciones.Entrada, ConexionRestricciones.Salida> {
+	public class ServicioRestricciones : ServicioBounds<ServicioRestricciones.Entrada, ServicioRestricciones.Salida> {
 
 		private static readonly string METODO = "GET";
 		private static readonly string SERVICIO = "/api/restricciones";
 
-		public ConexionRestricciones() : base(METODO, SERVICIO) { }
+		public ServicioRestricciones() : base(METODO, SERVICIO) { }
 
-		protected override Entrada GenerarEntrada() {
-			return null;
-		}
 
 		[Serializable]
 		public class Salida {

@@ -1,20 +1,15 @@
 using System;
 using System.Collections.Generic;
 
-namespace Bounds.Conexiones {
+namespace Bounds.Conexiones.Servicios {
 
-	public class ConexionEncontrarOponentes : ConexionBase<ConexionEncontrarOponentes.Entrada, ConexionEncontrarOponentes.Salida> {
+	public class ServicioEncontrarOponentes : ServicioBounds<ServicioEncontrarOponentes.Entrada, ServicioEncontrarOponentes.Salida> {
 
 		private static readonly string METODO = "POST";
 		private static readonly string SERVICIO = "/api/encontrar-oponente";
-		private readonly string nombre;
 
-		public ConexionEncontrarOponentes(string nombre) : base(METODO, SERVICIO) {
-			this.nombre = nombre;
-		}
-
-		protected override Entrada GenerarEntrada() {
-			return new Entrada {
+		public ServicioEncontrarOponentes(string nombre) : base(METODO, SERVICIO) {
+			entrada = new Entrada {
 				nombreJugador = nombre
 			};
 		}
